@@ -1,0 +1,33 @@
+.blog{
+    height: 200px;
+    background-image: url("../Vocabulary\ Day\ 09\ With\ Watermark.jpg");
+    background-size: cover;
+    background-color: brown;
+    box-shadow: 50px 10px 10px gray;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-blend-mode: multiply; */
+}
+
+h2{
+    color: purple;
+    text-decoration: underline wavy green;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: blue;
+}
+ul li{
+    color: brown;
+    display: inline;
+}
+input{
+    display: block;
+    margin: 10px;
+}
+input[type="text"]{
+    border-radius: 5px;
+    border: 2px solid orange;
+}

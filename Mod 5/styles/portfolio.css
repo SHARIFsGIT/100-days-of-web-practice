@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.text_primary {
+  color: #fd6e0a;
+}
+.btn_primary {
+  height: 64px;
+  border-radius: 5px;
+  background: #fd6e0a;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+  padding: 18px 35px;
+}
+.header {
+  background: #fff8f3;
+  background-image: url("../images/header_bg.png"), url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, left;
+}
+/* header & nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 200px;
+}
+.nav_title {
+  font-size: 45px;
+  font-weight: 800;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  margin-left: 50px;
+}
+/* banner styles */
+.banner {
+  margin: 0 200px;
+  display: flex;
+  align-items: center;
+}
+.banner_title {
+  font-size: 85px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.banner_subtitle {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.banner_discription {
+  color: #757575;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.btn_secondary {
+  width: 160px;
+  height: 64px;
+  margin-left: 30px;
+  color: #fd6e0a;
+  font-size: 20px;
+  font-weight: 700;
+  background-image: url("../images/icons/Frame.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  border: 0;
+}
+/* main section */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* about section */
+.about {
+  margin-top: 130px;
+  border-radius: 10px;
+  background: #fff8f3;
+  padding: 130px 150px;
+  text-align: center;
+}
+.section_title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.section_discription {
+  color: #757575;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.about_info_container {
+  display: flex;
+  justify-content: space-around;
+}
+.info_title {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 400;
+}
+.info_description {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* what I do styles */
+.what_i_do {
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+.what_i_do_discription {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.skill {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+.skills_container {
+  display: flex;
+  gap: 24px;
+}
+.skill_title {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.skill_description {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* resume styles */
+.resume_container{
+  display: flex;
+  gap: 24px;
+}
+.resume_item{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.resume_container .title{
+  color: #474747;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.resume_container .subtitle{
+  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.resume_container .discription{
+  color: #757575;
+  font-size: 16px;
+}
+.resume_btn{
+  margin-top: 50px;
+  text-align: center;
+}
+/* contract styles */
+.contract{
+  display: flex;
+  gap: 100px;
+  background-color: #FFF8F3;
+  padding: 130px 200px;
+}
+.contract a{
+  text-decoration: none;
+}
+.contract .section_title{
+  text-align: left;
+}
+.contract input[type="text"], input[type="email"], textarea{
+  margin-bottom: 24px;
+  border: 0;
+  width: 100%;
+  padding: 18px 20px;
+}
