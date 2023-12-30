@@ -1,0 +1,72 @@
+body{
+    background: #ddd;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img1 img{
+    height: 180px;
+    width: 100%;
+}
+
+.img2 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    margin-top: -80px;
+}
+
+.card:hover .img1 img{
+    scale: 1.1;
+    transition: 1.5s;
+}
+
+.card:hover .img2 img{
+    border: 3px solid coral;
+    scale: 1.05;
+    transition: 2s;
+}
+
+.main-text{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.main-text h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.main-text p{
+    font-size: 16px;
+    padding: 0 35px;
+}
+
+.socials{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.socials:hover{
+    cursor: pointer;
+    scale: 1.03;
+    transition: 1s;
+}
+
+.socials i{
+    font-size: 20px;
+    color: rgb(34, 119, 153);
+    padding: 0 10px;
+}
