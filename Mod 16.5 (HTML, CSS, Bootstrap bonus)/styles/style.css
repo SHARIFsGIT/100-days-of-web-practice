@@ -1,0 +1,43 @@
+h1 {
+  color: red;
+}
+
+p {
+  background-color: red;
+  color: wheat;
+  margin: 5px;
+  padding: 15px;
+  font-size: 36px;
+}
+
+ul {
+  border: 2px solid red;
+}
+
+nav ul {
+  border: 2px solid red;
+  margin-left: 20px;
+}
+nav ul li {
+  color: purple;
+}
+nav ul li a {
+  text-decoration: line-through;
+}
+
+button {
+  border: 1px solid red;
+  background-color: bisque;
+}
+button:hover {
+  background-color: aquamarine;
+}
+
+.success {
+  color: chartreuse;
+  border: 1px solid red;
+}
+
+.success {
+  padding: 25px;
+}/*# sourceMappingURL=style.css.map */
