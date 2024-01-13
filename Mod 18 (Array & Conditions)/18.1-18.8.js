@@ -92,3 +92,29 @@ if (isGraduated === true && (salary > iphonePrice || car >=1)){
 else{
     console.log('Single');
 }
+
+var money = 80;
+var butter = 45;
+var cola = 20;
+var rice = 50;
+
+if (rice < money){
+    console.log('Rice purchased');
+}
+else if (butter < money){
+    console.log('Rice fail, butter purchased');
+}
+else {
+    console.log('Ami gorib, cola e den');
+}
+
+var math = true;
+var science = false;
+if (math == true){
+    if (science == true){
+        console.log('Good student');
+    }
+    else {
+        console.log('Math student');
+    }
+}
