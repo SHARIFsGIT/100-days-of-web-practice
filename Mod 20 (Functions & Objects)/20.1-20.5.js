@@ -32,10 +32,22 @@ bringSingara(taka);
 
 function add(num1, num2){
     console.log(num1, num2);
-    var sum = num1 + num2;
+    var sum1 = num1 + num2;
     // console.log(sum);
     // return 15;
-    return sum;
+    return sum1;
 }
 var total = add(45, 15);
 console.log(total);
+
+function add(num1, num2){
+    console.log(num1, num2);
+    var sum2 = num1 + num2;
+    // console.log(sum);
+    // return 15;
+    return sum2;
+}
+var result1 = add(65, 15);
+var result2 = add(55, 15);
+var finalResult = add(result1, result2);
+console.log(finalResult);
