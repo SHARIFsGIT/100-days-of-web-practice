@@ -23,6 +23,7 @@ console.log(doesExist);
 const doesExistOneLine = text.toLowerCase().includes(searchString.toLowerCase());
 console.log(doesExistOneLine);
 
+
 // indexOf
 console.log(text.indexOf('University'));
 console.log(text.indexOf('university'));
@@ -34,11 +35,57 @@ else{
     console.log('not found');
 }
 
+
 // starts with
 console.log(text.startsWith('I'));
+
 
 // ends with
 const fileName = 'my_biodata.pdf';
 const otherFile = 'my_pic.png';
 
 console.log(fileName.endsWith('.pdf'));
+
+
+// split
+const parts = text.split(' ');
+console.log(parts)
+const sentences = text.split('.');
+console.log(sentences)
+const chars = text.split('');
+console.log(chars)
+
+
+// slice
+const partial = text.slice(5, 10);
+console.log(partial)
+
+
+// substring
+const partial2 = text.substring(5, 10);
+console.log(partial2)
+
+
+// at
+const gettingByAt = text.at(5);
+console.log(gettingByAt)
+
+
+// trim
+const geeting = '   Good morning   ';
+console.log(geeting.trim())
+
+
+// concat
+const str1 = 'Good';
+const str2 = 'morning';
+console.log(str1.concat(' ', str2))
+
+
+
+// join
+const lines = [
+    'Hello, world',
+    'I am Shakespeare.'
+];
+console.log(lines.join('. '))
