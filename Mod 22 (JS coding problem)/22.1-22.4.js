@@ -89,3 +89,45 @@ const lines = [
     'I am Shakespeare.'
 ];
 console.log(lines.join('. '))
+
+
+
+// math
+const result = Math.pow(3, 8);
+console.log(result);
+
+const num1 = 25;
+const num2 = 45;
+
+const errorGap = num1 - num2;
+if (errorGap < 5) {
+    console.log('Be friend');
+}
+else{
+    console.log('Stay apart');
+}
+
+const correctGap = Math.abs(num1 - num2);
+if (correctGap < 5) {
+    console.log('Be friend');
+}
+else{
+    console.log('Stay apart');
+}
+
+
+
+// round - ceil - floor
+const number = 2.4598;
+const fullNumber = Math.round(number);
+console.log(fullNumber)
+
+console.log(Math.ceil(number));
+console.log(Math.floor(number));
+
+
+// random
+console.log(Math.random());
+console.log(Math.random()*100);
+console.log(Math.round(Math.random()*100));
+console.log(Math.round(Math.random()*6));
