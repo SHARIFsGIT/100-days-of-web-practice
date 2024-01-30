@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <header>
+        <h1>Events</h1>
+        <button onclick="console.log(7)">Click Me</button>
+
+        <button onclick="document.body.style.backgroundColor= 'red'">Make red</button>
+
+        <button onclick="makeGray()">Make gray</button>
+
+        <button id="make-blue">Make blue</button>
+
+        <button id="make-purple">Make purple</button>
+
+        <button id="make-pink">Make pink</button>
+
+        <button id="make-green">Make green</button>
+
+        <button id="make-goldenRot">Make goldenRot</button>
+    </header>
+
+    <main>
+
+    </main>
+    <script>
+    function makeGray() {
+        document.body.style.backgroundColor = 'gray';
+        }
+
+    const makeBlueButton = document.getElementById('make-blue');
+    makeBlueButton.onclick = makeBlue;
+    function makeBlue(){
+        document.body.style.backgroundColor = 'blue';
+    }
+
+    const makePurpleButton = document.getElementById('make-purple');
+    makePurpleButton.onclick = function makePurple(){
+        document.body.style.backgroundColor = 'purple';
+    }
+
+    const pinkButton = document.getElementById('make-pink');
+    pinkButton.addEventListener('click', makePink);
+    function makePink(){
+        document.body.style.backgroundColor = 'pink';
+    }
+
+    const makeGreenButton = document.getElementById('make-green');
+    makeGreenButton.addEventListener('click', function makeGreen(){
+        document.body.style.backgroundColor = 'green';
+    });
+
+    document.getElementById('make-goldenRot').addEventListener('click', function (){
+        document.body.style.backgroundColor = 'goldenrod';
+    });
+    </script>
+    <script src="scripts/event.js"></script>
+</body>
+</html>
