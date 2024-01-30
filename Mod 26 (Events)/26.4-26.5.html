@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Final DOM event handlers</h1>
+    <h3 id="handle-status">Deafult</h3>
+    <p id="input-display">Deafult input text</p>
+    <p id="display">Deafult text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+    <br>
+    <br>
+    <button onclick="handelOnClick()">Handle event by add onclick function</button>
+
+    <button id="event-listener">addEventListener</button>
+    <br>
+    <br>
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+    <br>
+    <button id="post-button">Post</button>
+    <script>
+        function handelOnClick(){
+            // const handleStatus = document.getElementById('handle-status');
+            // handleStatus.innerText = 'Changed status';
+            document.getElementById('handle-status').innerText = 'Changed status';
+        }
+
+
+        document.getElementById('event-listener').addEventListener('click', function(){
+            document.getElementById('handle-status').innerText = 'Changed status by addEvent';
+        })
+
+        document.getElementById('btn-update').addEventListener('click', function(){
+            const fieldValue = document.getElementById('input-field').value;
+            const para = document.getElementById('input-display');
+            para.innerText = fieldValue;
+            fieldValue = '';
+        });
+
+        document.getElementById('post-button').addEventListener('click', function(){
+            const textArea = document.getElementById('text');
+            const getTextArea = textArea.value;
+
+            const paragraph = document.getElementById('display');
+            const p = document.createElement('p');
+            p.innerText = getTextArea;
+            paragraph.appendChild(p);
+
+            textArea.value = '';
+        });
+
+    </script>
+
+</body>
+</html>
