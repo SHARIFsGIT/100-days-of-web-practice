@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event delegate</title>
+</head>
+<body>
+    <section>
+        <ul id="list-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Possimus, maxime esse.</li>
+            <li class="item">Iste, dolores voluptatem.</li>
+            <li class="item">Ullam, nisi quam?</li>
+            <li class="item">Aperiam, rerum nisi?</li>
+            <li class="item">Quidem, assumenda in!</li>
+        </ul>
+        <button id="add-item">Add item</button>
+    </section>
+
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // for (const item of items){
+        //     item.addEventListener('click', function(event) {
+        //         // console.log(event.target.parentNode);
+        //         event.target.parentNode.removeChild(event.target);
+        //     });
+        // }
+
+        // Deligate to parent node:
+        document.getElementById('list-container').addEventListener('click', function(event) {
+            event.target.parentNode.removeChild(event.target);
+        });
+        
+
+        document.getElementById('add-item').addEventListener('click', function(event) {
+            const listContainer = document.getElementById('list-container');
+            const liAdd = document.createElement('li');
+            liAdd.innerText = 'New item';
+            liAdd.classList.add ('item');
+            listContainer.appendChild(liAdd);
+        });
+    </script>
+</body>
+</html>
