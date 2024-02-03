@@ -11,6 +11,12 @@ gettingLoginButton.addEventListener('click', function(){
         window.location.href = '27.4.html';
     }
     else{
-        alert('Please enter valid accodation');
+        alert('Please enter your valid accodation');
     }
+});
+
+const forgotPass = document.getElementById('forget-button');
+forgotPass.addEventListener('click', function(){
+    const forgot = document.getElementById('forgot-pass');
+    forgot.style.display = 'block';
 });

@@ -1,19 +1,24 @@
-// getting the withdrawn button
+// getting the button
+const getWithdrawButton = document.getElementById('withdraw-btn');
+getWithdrawButton.addEventListener('click', function(){
+    const getWithdrawField = document.getElementById('withdraw-field');
+    const insideWithdrawField = parseFloat(getWithdrawField.value);
+    getWithdrawField.value = "";
+    if (isNaN(insideWithdrawField)){
+        alert('Please enter a valid number');
+        return;
+    }
+    const getPreviousWithdrawAmount = document.getElementById('withdraw-amount');
+    const insidePreviousWithdrawAmount = parseFloat(getPreviousWithdrawAmount.innerText);
 
-const withdrawnButton = document.getElementById('withdraw-btn');
-withdrawnButton.addEventListener('click', function(){
-    const withdrawnField = document.getElementById('withdraw-field');
-    const withdrawAmount = withdrawnField.value;
-
-    const currentWithdraw = document.getElementById('withdraw-amount');
-    const previousWithdrawAmount = currentWithdraw.innerText;
-    currentWithdraw.innerText = withdrawAmount;
-    withdrawnField.value = "";
-
-    const totalWithdraw = parseFloat(previousWithdrawAmount) + parseFloat(withdrawAmount);
-    currentWithdraw.innerText = totalWithdraw;
-
-    const balanceAmount = document.getElementById('balance-amount');
-    const previousBalanceAmount = balanceAmount.innerText;
-    balanceAmount.innerText = parseFloat(previousBalanceAmount) - parseFloat(withdrawAmount);
+    const getBalanceAmount = document.getElementById('balance-amount');
+    const insidePreviousBalanceAmount = parseFloat(getBalanceAmount.innerText); 
+    if(insideWithdrawField >= insidePreviousBalanceAmount){
+        alert('Insufficient funds');
+    }
+    else{
+        const totalWithdraw = insidePreviousWithdrawAmount + insideWithdrawField;
+        getPreviousWithdrawAmount.innerText = totalWithdraw;
+        getBalanceAmount.innerText = insidePreviousBalanceAmount - insideWithdrawField; 
+    }
 });

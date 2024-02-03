@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inside the bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,13 +40,13 @@
             <div class="grid grid-cols-2 gap-5 w-9/12 mx-auto">
                 <div class="bg-green-200 p-8 rounded-xl">
                     <h4 class="text-2xl">Please Deposite</h4>
-                    <input class="w-10/12 my-4 p-2 rounded-lg" type="text" name="" id="deposite-field" placeholder="Deposite amount">
+                    <input class="w-full my-4 p-2 rounded-lg" type="number" name="" id="deposite-field" placeholder="Deposite amount">
                     <button class="bg-green-700 px-8 py-2 rounded-lg text-white font-medium hover:bg-green-600" id="deposite-btn">Deposite</button>
                 </div>
 
                 <div class="bg-red-200 p-8 rounded-xl">
                     <h4 class="text-2xl">Please Withdraw</h4>
-                    <input class="w-10/12 my-4 p-2 rounded-lg" type="email" name="" id="withdraw-field" placeholder="Withdraw amount">
+                    <input class="w-full my-4 p-2 rounded-lg" type="number" name="" id="withdraw-field" placeholder="Withdraw amount">
                     <button class="bg-red-700 px-8 py-2 rounded-lg text-white font-medium hover:bg-red-600" id="withdraw-btn">Withdraw</button>
                 </div>
             </div>

@@ -1,18 +1,20 @@
 // getting the button
 const getDepositeButton = document.getElementById('deposite-btn');
 getDepositeButton.addEventListener('click', function(){
-    const depositeField = document.getElementById('deposite-field');
-    const depositeAmount = depositeField.value;
-    
-    const currentDeposite = document.getElementById('deposite-amount');
-    const previousDepositeAmount = currentDeposite.innerText;
-    currentDeposite.innerText = depositeAmount;
-    depositeField.value = "";
+    const getDepositeField = document.getElementById('deposite-field');
+    const insideDepositeField = parseFloat(getDepositeField.value);
+    getDepositeField.value = "";
+    if (isNaN(insideDepositeField)){
+        alert('Please enter a valid number');
+        return;
+    }
+    const getPreviousDepositeAmount = document.getElementById('deposite-amount');
+    const insidePreviousDepositeAmount = parseFloat(getPreviousDepositeAmount.innerText);
 
-    const totalDeposite = parseFloat(previousDepositeAmount) + parseFloat(depositeAmount);
-    currentDeposite.innerText = totalDeposite;
+    const totalDeposite = insidePreviousDepositeAmount + insideDepositeField;
+    getPreviousDepositeAmount.innerText = totalDeposite;
 
-    const balanceAmount = document.getElementById('balance-amount');
-    const previousBalanceAmount = balanceAmount.innerText;
-    balanceAmount.innerText = parseFloat(previousBalanceAmount) + parseFloat(depositeAmount);
+    const getBalanceAmount = document.getElementById('balance-amount');
+    const insidePreviousBalanceAmount = parseFloat(getBalanceAmount.innerText);
+    getBalanceAmount.innerText = insidePreviousBalanceAmount + insideDepositeField;
 });
