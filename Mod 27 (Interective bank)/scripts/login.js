@@ -8,9 +8,9 @@ gettingLoginButton.addEventListener('click', function(){
     const gettingPassword = document.getElementById('user-password');
     const passwordValue = gettingPassword.value;
     if (emailValue === 'sharifaiub15@gmail.com' && passwordValue === 'sharif') {
-        console.log('valid');
+        window.location.href = '27.4.html';
     }
     else{
-        console.log('invalid');
+        alert('Please enter valid accodation');
     }
 });
