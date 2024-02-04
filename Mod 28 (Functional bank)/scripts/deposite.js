@@ -1,4 +1,5 @@
 document.getElementById('btn-deposite').addEventListener('click', function(){
+    /*
     const depositeField = document.getElementById('deposite-field');
     const newDepositeAmountString = depositeField.value;
     const newDepositeAmount = parseFloat(newDepositeAmountString);
@@ -17,6 +18,19 @@ document.getElementById('btn-deposite').addEventListener('click', function(){
 
     const newBalanceTotal = previousBalanceTotalAmount + newDepositeAmount;
     balanceTotalElement.innerText = newBalanceTotal;
-});
+    */
 
-console.log(myUtility)
+    const newDepositeAmount = getInputFieldValueById('deposite-field');
+    const previousDepositeTotal = getTextElementValueById('deposite-total');
+
+    // calculate
+    const newDepositeTotal = previousDepositeTotal + newDepositeAmount;
+    // set deposite total value
+    setTextElementValueById('deposite-total', newDepositeTotal);
+
+    // get previous balance
+    const previousBalanceTotal = getTextElementValueById('balance-total');
+    // calculate previous balance
+    const newBalanceTotal = previousBalanceTotal + newDepositeAmount;
+    setTextElementValueById('balance-total', newBalanceTotal);
+});
