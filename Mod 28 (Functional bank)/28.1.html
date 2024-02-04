@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl center text-center mt-5">Baap er <span class="text-red-500 font-medium">Bank</span></h1>
+    </header>
+    <main>
+        <!-- transaction -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 mx-auto gap-4 w-3/4">
+                <div class="bg-green-400 p-8 text-white rounded-lg">
+                    <h4 class="text-3xl">Deposite</h4>
+                    <h2 class="text-5xl font-medium">$<span id="deposite-total">00</span></h2>
+                </div>
+                <div class="bg-red-400 p-8 text-white rounded-lg">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h2 class="text-5xl font-medium">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-blue-400 p-8 text-white rounded-lg">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="text-5xl font-medium">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- diposite & withdraw -->
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-violet-400 p-8 rounded-lg">
+                    <h3 class="text-4xl text-white mb-4">Your Deposite</h3>
+                    <input class="w-full p-3 rounded-md" type="text" placeholder="Deposite amount" id="deposite-field">
+                    <button class="bg-green-700 p-3 text-white font-medium rounded-lg mt-5" id="btn-deposite">Deposite</button>
+                </div>
+                <div class="bg-amber-400 p-8 rounded-lg">
+                    <h3 class="text-4xl text-white mb-4">Your Withdraw</h3>
+                    <input class="w-full p-3 rounded-md" type="text" placeholder="Withdraw amount" id="withdraw-field">
+                    <button class="bg-red-700 p-3 text-white font-medium rounded-lg mt-5" id="btn-withdraw">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/utlities.js"></script>
+    <script src="scripts/deposite.js"></script>
+    <script src="scripts/withdraw.js"></script>
+
+</body>
+</html>
