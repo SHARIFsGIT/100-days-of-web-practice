@@ -26,3 +26,11 @@ function doubleThem(a, b){
 }
 const [prothom, ditiyo] = doubleThem(6, 9);
 console.log(prothom, ditiyo)
+
+var [color1, color2] = ['red', 'green', 'blue', 'orange']; // blue, orange doesn't set
+console.log(color1, color2)
+
+
+let [n1, , n3] = [1, 2, 3]
+console.log(n1)
+console.log(n3)
