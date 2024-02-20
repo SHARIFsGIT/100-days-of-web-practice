@@ -29,7 +29,7 @@ const person = {
 console.log(person.name) // dot notation
 console.log(person['age']) // bracket notation
 
-console.log(person.1) // dot notation gives error
+// console.log(person.1) // dot notation gives error
 console.log(person['1']) // bracket notation
 
 // variable notation
