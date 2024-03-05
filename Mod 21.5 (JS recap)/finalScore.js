@@ -3,5 +3,5 @@ function finalScore(scores) {
     return totalScore;
 }
 const inputScores = [20, 13, 37];
-const Score = finalScore(inputScores);
-console.log(Score);
+const sumScore = finalScore(inputScores);
+console.log(sumScore);
