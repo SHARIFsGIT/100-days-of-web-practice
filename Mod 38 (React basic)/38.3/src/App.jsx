@@ -1,11 +1,37 @@
-import Todo from './38.6';
+import Actor from './38.8';
 import './App.css';
+import Singer from './Singer';
+import BookStore from './Store';
 
 function App() {
+  const actors = ['Sakib', 'Raj', 'Siam']
+
+  const singers = [
+    {id: 1, name: 'Dr Marshal', age: 34},
+    {id: 2, name: 'Eva Rahman', age: 24},
+    {id: 3, name: 'Shuvro', age: 54}
+  ]
+
+  const books = [
+    {id: 1, name: 'Physics', price: 340},
+    {id: 2, name: 'Chemistry', price: 400},
+    {id: 3, name: 'Biology', price: 540}
+  ]
   return (
     <>
       <h1>Vite + React</h1>
-      <Todo 
+      <Actor name= {'Bappa'}></Actor>
+
+      {
+        actors.map(actor => <Actor name={actor}></Actor>)
+      }
+
+      {
+        singers.map(singer => <Singer singer={singer}></Singer>)
+      }
+
+      <BookStore books={books}></BookStore>
+      {/* <Todo 
       task='Learn React' 
       isDone={true}></Todo>
 
@@ -15,7 +41,8 @@ function App() {
 
       <Todo 
       task='Try JSX' 
-      isDone={true}></Todo>
+      isDone={true}></Todo> */}
+
       {/* <Device name='laptop' price='55'></Device>
       <Device name='mobile'></Device>
       <Device name='watch' price='95K'></Device>
