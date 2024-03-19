@@ -1,18 +1,33 @@
+import Todo from './38.6';
 import './App.css';
 
 function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Device name='laptop' price='55'></Device>
+      <Todo 
+      task='Learn React' 
+      isDone={true}></Todo>
+
+      <Todo 
+      task='Explore Core Concepts' 
+      isDone={false}></Todo>
+
+      <Todo 
+      task='Try JSX' 
+      isDone={true}></Todo>
+      {/* <Device name='laptop' price='55'></Device>
       <Device name='mobile'></Device>
       <Device name='watch' price='95K'></Device>
+
       <Person></Person>
+
       <Student grade='7' score='99'></Student>
       <Student grade={12} score={85}></Student>
       <Student></Student>
+
       <Developer></Developer>
-      <Researcher></Researcher>
+      <Researcher></Researcher> */}
     </>
   )
 }
