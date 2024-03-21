@@ -1,6 +1,8 @@
 import './App.css';
 import Counter from './Counter';
+import Friends from './Friends';
 import Team from './Team';
+import Users from './User';
 
 function App() {
   function handleClick(){
@@ -18,6 +20,10 @@ const addToFive = (num) => {
   return (
     <>
       <h1>Core concept 2</h1>
+
+      <Friends></Friends>
+
+      <Users></Users>
 
       <Team></Team>
 
