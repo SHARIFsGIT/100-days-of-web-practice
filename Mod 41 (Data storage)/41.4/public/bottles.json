@@ -1,0 +1,11 @@
+[
+    {"id": 1, "name": "Bottle 1", "volume_ml": 500, "color": "blue", "material": "glass", "image_url": "https://www.imprint5.com/media/catalog/product/cache/e4d02a0136e3d50fa97fad0473332714/t/r/tritan_sports_water_bottle_1_.jpg"},
+    {"id": 2, "name": "Bottle 2", "volume_ml": 750, "color": "green", "material": "plastic", "image_url": "https://www.imprint5.com/media/mageworx/optionfeatures/product/option/value/c/u/custom_vacuum_sport_water_bottle_w_carry_handle_-_17_oz._1_.jpg"},
+    {"id": 3, "name": "Bottle 3", "volume_ml": 1000, "color": "clear", "material": "glass", "image_url": "https://www.imprint5.com/media/mageworx/optionfeatures/product/option/value/c/u/custom_stainless_steel_water_bottle_w_lid-1.jpg"},
+    {"id": 4, "name": "Bottle 4", "volume_ml": 250, "color": "red", "material": "plastic", "image_url": "https://www.imprint5.com/media/mageworx/optionfeatures/product/option/value/4/6/4644563107_48955660.jpg"},
+    {"id": 5, "name": "Bottle 5", "volume_ml": 500, "color": "yellow", "material": "glass", "image_url": "https://www.imprint5.com/media/mageworx/optionfeatures/product/option/value/c/u/custom_stainless_vacuum_bottle_-_17_oz._2_.jpg"},
+    {"id": 6, "name": "Bottle 6", "volume_ml": 1000, "color": "blue", "material": "plastic", "image_url": "https://www.imprint5.com/media/catalog/product/cache/e4d02a0136e3d50fa97fad0473332714/f/i/file_240.jpg"},
+    {"id": 7, "name": "Bottle 7", "volume_ml": 750, "color": "green", "material": "glass", "image_url": "https://cdn.myshoptet.com/usr/www.molecular-hydrogen.eu/user/shop/big/115-1_glass-hydrogen-generator-water-bottle-aquagen-h2o-400ml.jpg?65d4eaf5"},
+    {"id": 8, "name": "Bottle 8", "volume_ml": 500, "color": "clear", "material": "plastic", "image_url": "https://www.imprint5.com/media/catalog/product//k/d/kd118vw_1.jpg"}
+]
+  
