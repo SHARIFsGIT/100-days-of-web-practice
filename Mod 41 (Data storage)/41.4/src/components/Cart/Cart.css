@@ -1,8 +1,5 @@
-.cart-container{
+.cart-container img{
+    border-radius: 20px;
     width: 100px;
     margin-right: 10px;
-}
-
-.cart-container img{
-    border-radius: 5px;
 }

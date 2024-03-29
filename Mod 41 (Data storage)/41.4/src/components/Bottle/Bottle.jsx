@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import './Bottle.css';
+
 const Bottle = ({bottle, handleAdd}) => {
     const {name, volume_ml, color, image_url} = bottle;
     return (
@@ -10,6 +12,11 @@ const Bottle = ({bottle, handleAdd}) => {
             <button onClick={() => handleAdd(bottle)}>Purchase</button>
         </div>
     );
+};
+
+Bottle.propTypes = {
+    bottle: PropTypes.object.isRequired,
+    handleAdd: PropTypes.func.isRequired
 };
 
 export default Bottle;
