@@ -1,0 +1,52 @@
+[
+    {
+      "id": "123456",
+      "cover_image": "https://img.freepik.com/free-vector/hand-drawn-abstract-shapes-facebook-cover_23-2149083718.jpg?t=st=1711801534~exp=1711805134~hmac=b22f6975d24055fa9b610067bc81998b3a2b2c4345c1731231e3175b15bc89aa&w=996",
+      "title": "The Secret Garden",
+      "author": "Lily May",
+      "author_image": "https://img.freepik.com/free-photo/portrait-thinking-young-readhead-man-white-shirt-sitting-wooden-table-with-pen-his-mouth_171337-9874.jpg?t=st=1711800613~exp=1711804213~hmac=952cf4e838342e3b0833c45fc2561cab8999c655948f8877cdd4c8820250f393&w=1380",
+      "posted_date": "2024-03-30",
+      "reading_time": 15,
+      "hashtags": ["#fiction", "#mystery", "#adventure"]
+    },
+    {
+      "id": "789012",
+      "cover_image": "https://img.freepik.com/free-psd/real-estate-house-property-facebook-cover-banner-template_120329-1857.jpg?t=st=1711801565~exp=1711805165~hmac=0a01aeb7260a2c6c6b79e8860c4fc9846fb853c7ca1707141e464b0d6fce286f&w=996",
+      "title": "Beyond the Horizon",
+      "author": "Max Stone",
+      "author_image": "https://img.freepik.com/free-photo/modern-man-reading_23-2147986138.jpg?t=st=1711800656~exp=1711804256~hmac=a6481a14f7e76b84f865ce9775baf0c96bac07cd4b4fa4c9d46af37d52433eb7&w=996",
+      "posted_date": "2024-03-29",
+      "reading_time": 20,
+      "hashtags": ["#sciencefiction", "#space", "#exploration"]
+    },
+    {
+      "id": "345678",
+      "cover_image": "https://img.freepik.com/free-vector/gradient-abstract-fluid-technology-linkedin-banner_23-2149171998.jpg?t=st=1711801587~exp=1711805187~hmac=2c968e22d78cc0bda78b98198730b24bc45ff50c8eca0f1c043f6c4cd3746a56&w=996",
+      "title": "Whispers in the Dark",
+      "author": "Scarlett Rivers",
+      "author_image": "https://img.freepik.com/free-photo/portrait-carefree-blond-cute-woman-working-with-documents-drinking-takeaway-coffee-sitting_1258-206090.jpg?t=st=1711800685~exp=1711804285~hmac=b9b3baf5416bd2bf5ce23e8d3a8ea53fc99908ef5c9579f3eea1af65ecfdbf8c&w=996",
+      "posted_date": "2024-03-28",
+      "reading_time": 25,
+      "hashtags": ["#horror", "#suspense", "#thriller"]
+    },
+    {
+      "id": "901234",
+      "cover_image": "https://img.freepik.com/free-vector/gradient-white-party-template_23-2149340842.jpg?t=st=1711801601~exp=1711805201~hmac=4040db6ce883419478a4acd9226724ca2db2c88f8eb3aec0bf73947a02acaf24&w=996",
+      "title": "Eternal Echoes",
+      "author": "Ethan Reed",
+      "author_image": "https://img.freepik.com/free-photo/entrepreneur-writing-agenda_23-2148446265.jpg?t=st=1711800710~exp=1711804310~hmac=7bce5356720fea674ef8ab2ef6ef1bd2c8711f5c97ef1d42f2f474ff69281f20&w=740",
+      "posted_date": "2024-03-27",
+      "reading_time": 18,
+      "hashtags": ["#romance", "#drama", "#heartbreak"]
+    },
+    {
+      "id": "567890",
+      "cover_image": "https://img.freepik.com/free-psd/digital-marketing-agency-corporate-facebook-cover-template_120329-3037.jpg?t=st=1711801667~exp=1711805267~hmac=958531cba0d89aba733297f3ddae5ffc79d06e30248f794f85a104f581d58cb7&w=996",
+      "title": "The Lost City",
+      "author": "Amelia West",
+      "author_image": "https://img.freepik.com/free-photo/portrait-mature-woman-covered-blanket-holding-book_171337-19322.jpg?t=st=1711800732~exp=1711804332~hmac=4c4f23e5a968a14ed929a856f70d7af39697ecfe377b3e169bb1b2b707a66b86&w=740",
+      "posted_date": "2024-03-26",
+      "reading_time": 30,
+      "hashtags": ["#adventure", "#archaeology", "#mystery"]
+    }
+]  
